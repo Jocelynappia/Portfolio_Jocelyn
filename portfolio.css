@@ -54,16 +54,46 @@ nav a {
   cursor: pointer;
 }
 
+/* Header avec image de fond */
 header {
   padding: 5rem 1rem 3rem;
   text-align: center;
-  background: rgba(0, 0, 0, 0.3);
+  background: url('Imge\ data2.jpg') center/cover no-repeat;
+  position: relative;
   animation: fadeInDown 1s ease-in-out;
+  color: var(--text-color);
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* Overlay sombre */
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
 }
 
 header h1 {
   font-size: 3rem;
   margin: 0;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Animation sur le titre au survol */
+header h1:hover {
+  transform: scale(1.05);
+  color: var(--accent-color);
 }
 
 header p {
@@ -82,6 +112,13 @@ h2 {
   border-bottom: 2px solid var(--accent-color);
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Animation sur h2 au survol */
+h2:hover {
+  transform: translateX(5px);
+  color: var(--accent-color);
 }
 
 .project {
@@ -121,6 +158,7 @@ a:hover {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
 #photo {
   width: 220px;
   height: 260px;
