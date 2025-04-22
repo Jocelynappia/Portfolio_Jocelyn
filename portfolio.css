@@ -174,3 +174,19 @@ a:hover {
   height: 100%;
   object-fit: cover;
 }
+/*bouton de téléchargement */
+.download-btn {
+  display: inline-block;
+  background-color: #8fd9ff;
+  color: #1b1f3b;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.download-btn:hover {
+  background-color: #6cc2e9;
+}
