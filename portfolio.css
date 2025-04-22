@@ -70,7 +70,6 @@ header {
   text-align: justify;
 }
 
-
 /* Overlay sombre */
 header::before {
   content: "";
