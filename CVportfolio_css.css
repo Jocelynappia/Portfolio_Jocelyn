@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
       margin: 0;
       background-color: #1b1f3b;
       display: flex;
@@ -20,3 +21,121 @@ body {
       font-family: sans-serif;
       margin: 1rem;
     }
+=======
+  margin: 0;
+  background-color: #1b1f3b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #8fd9ff;
+  margin: 1rem;
+}
+
+/* Bouton Dark/Light Thème repositionné */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 5rem; /* Plus proche du bord */
+  background-color: #8fd9ff;
+  color: #1b1f3b;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #6ec6f0;
+  transform: scale(1.05);
+}
+
+body.light .theme-toggle {
+  background-color: #007acc;
+  color: white;
+}
+
+body.light .theme-toggle:hover {
+  background-color: #005f99;
+}
+
+/* Section téléchargement CV */
+.download-container {
+  align-self: flex-start;
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.download-btn {
+  background-color: transparent;
+  color: #8fd9ff;
+  border: 2px solid #8fd9ff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #8fd9ff;
+  color: #1b1f3b;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.cv-container {
+  max-width: 800px;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+.cv-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Liste des boutons de projets Power BI */
+.download-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+  gap: 1rem;
+  padding-left: 0;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.btn-download {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  background-color: #00bfff;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  text-align: center;
+  transition: background 0.3s, transform 0.2s ease;
+}
+
+.btn-download:hover {
+  background-color: #009acd;
+  transform: scale(1.03);
+}
+
+body.light .btn-download {
+  background-color: #007acc;
+}
+
+body.light .btn-download:hover {
+  background-color: #005f99;
+}
+>>>>>>> 704a3f13dad7b559429bdd7da24b55aa1dd789a4
