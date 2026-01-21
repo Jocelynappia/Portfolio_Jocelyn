@@ -57,68 +57,30 @@ nav a {
 
 /* --- HEADER --- */
 header {
-<<<<<<< HEAD
-  position: relative;
-  padding: 5rem 1rem 3rem;
-  text-align: center;
-  background: url('image_data.jpg') center/cover no-repeat;
-  color: var(--text-color);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  animation: fadeInDown 1s ease-in-out;
-=======
   padding: 5rem 1rem 3rem;
   text-align: center;
   background: url('Imge data2.jpg') center/cover no-repeat;
   position: relative;
   animation: fadeInDown 1s ease-in-out;
   color: var(--text-color);
->>>>>>> 704a3f13dad7b559429bdd7da24b55aa1dd789a4
 }
 
 header::before {
   content: "";
   position: absolute;
   inset: 0;
-<<<<<<< HEAD
-  background: rgba(0, 0, 0, 0.5); /* voile sombre pour lisibilité */
-  z-index: 0;
-}
-
-/* ✅ Conteneur centré et réduit */
-header .content {
-  max-width: 700px; /* largeur du bloc central */
-  margin: 0 auto;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.4); /* fond semi-transparent */
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-}
-
-=======
   background: rgba(0, 0, 0, 0.5);
   z-index: 0;
 }
 
->>>>>>> 704a3f13dad7b559429bdd7da24b55aa1dd789a4
 header * {
   position: relative;
   z-index: 1;
 }
 
-<<<<<<< HEAD
-/* --- TITRE & TEXTE --- */
-header h1 {
-  font-size: 2.5rem;
-  margin: 1rem 0 0.5rem;
-=======
 header h1 {
   font-size: 3rem;
   margin: 0;
->>>>>>> 704a3f13dad7b559429bdd7da24b55aa1dd789a4
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -132,25 +94,6 @@ header p {
   color: var(--accent-color);
 }
 
-<<<<<<< HEAD
-/* --- PHOTO --- */
-#photo {
-  width: 180px;
-  height: 220px;
-  margin: 0 auto 1rem;
-  border: 3px solid #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-}
-
-.profile-pic {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-=======
->>>>>>> 704a3f13dad7b559429bdd7da24b55aa1dd789a4
 
 /* --- SECTIONS --- */
 section {
@@ -178,15 +121,9 @@ h2:hover {
   text-align: justify;
 }
 
-<<<<<<< HEAD
-/* --- PROJETS ET EXPERIENCES --- */
-.project,
-.experience {
-=======
 /* --- PROJETS ET EXPÉRIENCES --- */
 .project,
 .Expériences {
->>>>>>> 704a3f13dad7b559429bdd7da24b55aa1dd789a4
   background: rgba(255, 255, 255, 0.05);
   padding: 1.5rem;
   border-radius: 10px;
@@ -196,53 +133,33 @@ h2:hover {
 }
 
 .project:hover,
-<<<<<<< HEAD
-.experience:hover {
-=======
 .Expériences:hover {
->>>>>>> 704a3f13dad7b559429bdd7da24b55aa1dd789a4
   transform: scale(1.02);
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
 }
 
 .project h3,
-<<<<<<< HEAD
-.experience h3 {
-=======
 .Expériences h3 {
->>>>>>> 704a3f13dad7b559429bdd7da24b55aa1dd789a4
   color: var(--accent-color);
   margin-top: 0;
   transition: color 0.3s ease;
 }
 
 .project h3:hover,
-<<<<<<< HEAD
-.experience h3:hover {
-=======
 .Expériences h3:hover {
->>>>>>> 704a3f13dad7b559429bdd7da24b55aa1dd789a4
   color: #00cfff;
 }
 
 .project p,
-<<<<<<< HEAD
-.experience p {
-=======
 .Expériences p {
->>>>>>> 704a3f13dad7b559429bdd7da24b55aa1dd789a4
   line-height: 1.5;
 }
 
 /* --- LISTES DE TÉLÉCHARGEMENT --- */
 .download-list {
   display: flex;
-<<<<<<< HEAD
-  flex-wrap: wrap;
-=======
   flex-wrap: wrap; /* permet de passer à la ligne si besoin */
->>>>>>> 704a3f13dad7b559429bdd7da24b55aa1dd789a4
   gap: 1rem;
   list-style: none;
   padding: 0;
@@ -250,11 +167,7 @@ h2:hover {
 }
 
 .download-list li {
-<<<<<<< HEAD
-  flex: 1 1 200px;
-=======
   flex: 1 1 200px; /* chaque bouton prend une largeur minimale mais s’adapte */
->>>>>>> 704a3f13dad7b559429bdd7da24b55aa1dd789a4
 }
 
 .btn-download {
@@ -274,8 +187,6 @@ h2:hover {
   transform: scale(1.05);
 }
 
-<<<<<<< HEAD
-=======
 
 /* --- PHOTO --- */
 #photo {
@@ -294,7 +205,6 @@ h2:hover {
   object-fit: cover;
 }
 
->>>>>>> 704a3f13dad7b559429bdd7da24b55aa1dd789a4
 /* --- BOUTON TÉLÉCHARGEMENT CV --- */
 .download-btn {
   display: inline-block;

@@ -1,27 +1,4 @@
 body {
-<<<<<<< HEAD
-      margin: 0;
-      background-color: #1b1f3b;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
-
-    iframe {
-      width: 90%;
-      height: 95vh;
-      border: none;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
-
-    h1 {
-      color: #8fd9ff;
-      font-family: sans-serif;
-      margin: 1rem;
-    }
-=======
   margin: 0;
   background-color: #1b1f3b;
   display: flex;
@@ -138,4 +115,3 @@ body.light .btn-download {
 body.light .btn-download:hover {
   background-color: #005f99;
 }
->>>>>>> 704a3f13dad7b559429bdd7da24b55aa1dd789a4
