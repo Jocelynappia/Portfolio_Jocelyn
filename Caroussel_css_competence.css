@@ -1,0 +1,117 @@
+/* --- SECTION SKILLS --- */
+
+#skills {
+  padding: 4rem 5% 2rem;
+  max-width: 1000px;
+  margin: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Wrapper identique logique projet */
+.skills-wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* MENU GAUCHE */
+.skills-menu {
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Boutons style cohérent avec ton thème */
+.skills-menu button {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--accent-color);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.skills-menu button:hover {
+  background: var(--accent-color);
+  color: #1b1f3b;
+  transform: translateX(5px);
+}
+
+/* CONTENU DROITE */
+.skills-display {
+  flex: 2 1 500px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Détail */
+.skill-detail {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.skill-detail.active {
+  display: block;
+}
+
+.skill-detail h3 {
+  color: var(--accent-color);
+  margin-top: 0;
+}
+.skills-menu button.active-btn {
+  background: var(--accent-color);
+  color: #1b1f3b;
+}
+.skills-display {
+  flex: 2;
+  display: flex;
+  align-items: center;
+}
+
+.skills-screen {
+  width: 100%;
+  min-height: 250px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  transition: all 0.4s ease;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.skills-screen h3 {
+  color: var(--accent-color);
+}
+/*DISPOSIION IMAEGE*/
+.skill-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  font-size: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--accent-color);
+  background: rgba(255,255,255,0.05);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.skill-btn img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.skill-btn:hover {
+  background: var(--accent-color);
+  color: #1b1f3b;
+  transform: translateX(8px);
+}
+

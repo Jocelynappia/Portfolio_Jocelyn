@@ -250,3 +250,109 @@ a:hover {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+/* WRAPPER GLOBAL */
+.skills-wrapper {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+/*COMPETENCE*/
+
+#skills h2 {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin: 0 auto 2rem auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* MENU GAUCHE */
+.skills-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 280px;
+}
+
+/* BOUTONS AGRANDIS */
+.skills-menu button {
+  padding: 1.2rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 1px solid var(--accent-color);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+/* Effet hover */
+.skills-menu button:hover {
+  background: var(--accent-color);
+  color: #1b1f3b;
+  transform: translateX(8px);
+}
+
+/* Bouton actif */
+.skills-menu button.active-btn {
+  background: var(--accent-color);
+  color: #1b1f3b;
+  box-shadow: 0 0 15px var(--accent-color);
+}
+
+/* PANNEAU DROIT */
+.skills-display {
+  flex: 1;
+}
+
+/* ÉCRAN DÉTAIL */
+.skills-screen {
+  min-height: 300px;
+  padding: 2rem;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.skills-screen h3 {
+  color: var(--accent-color);
+  margin-top: 0;
+}
+#skills::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("fdc.jpg") center/cover no-repeat;
+  filter: blur(6px);
+  opacity: 0.3;
+  z-index: -1;
+}
+#image-data {
+  width: 200px;
+  height: 150px;
+  position: relative;
+}
+
+#image-dev {
+  width: 150px;
+  height: 100px;
+}
+#image-project {
+  width: 80px;
+  height: 100px;
+}
+.skill-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centre horizontalement */
+}
+#image-data,
+#image-dev,
+#image-project{
+  display: block;
+  margin: 10px auto;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Compétences de Jocelyn Appia</title>
+
+  <!-- IMPORTANT : on charge le CSS principal -->
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="index.html#projects">Projets</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="skills">
+  <h2>COMPETENCES</h2>
+
+  <div class="skills-wrapper">
+
+    <div class="skills-menu">
+
+  <button class="skill-btn" data-skill="data">
+    <span>📊 Data & BI</span>
+  </button>
+  <img src="power-bi-overview.png" alt="Power BI" id = "image-data">
+
+  <button class="skill-btn" data-skill="dev">
+    <span>💻 Développement</span>
+  </button>
+  <img src="imagessql.png" alt="SQL" id = "image-dev">
+
+  <button class="skill-btn" data-skill="project">
+    <span>🧠 Gestion de projet</span>
+  </button>
+  <img src="imagesprojet.png" alt="Gestion de projet" id = "image-project">
+
+    </div>
+    <div class="skills-display">
+      <div class="skills-screen">
+        <h3 id="screen-title">Cliquez sur une compétence</h3>
+        <p id="screen-content">Le détail apparaîtra ici.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script src="competence.js"></script>
+
+</body>
+</html>
